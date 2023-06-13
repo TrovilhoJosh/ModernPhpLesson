@@ -12,20 +12,26 @@
     <h1>Resultado do processamento </h1>
   </header>
   <main>
-    
- <?php
- 
-      $number = $_GET["number"];
+    <?php 
 
-      echo "";
+      $number = $_GET["number"]; 
+      $cotacao = 5.22;
+      $dolar = $number / $cotacao;
+      
+      //formatacao de dados!
 
-  ?>
+      $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
     
+      echo numfmt_format_currency($padrao, $number, "BRL") . " em dolar eh equivalente a " . numfmt_format_currency($padrao, $dolar, "USD") . "<br> <br>";
+      echo "Cotacao fixa! No valor de R$5,22";
+      
+      
+      
+    ?>
 
     <p>
-
       <a href="javascript:history.go(-1)">Voltar</a>
-
     </p>
     
   </main>

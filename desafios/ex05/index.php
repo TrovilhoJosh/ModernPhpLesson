@@ -14,7 +14,7 @@
   <section>
     <form action="result.php" method="get">
       <label for="number">Numero real?</label>
-      <input type="text" name="number" id="idNumber">
+      <input type="number" name="number" id="idNumber" step="0.001">
       <input type="submit" value="Converter"></input>
     </form>
   </section>

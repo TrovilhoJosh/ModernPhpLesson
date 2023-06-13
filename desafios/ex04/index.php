@@ -14,7 +14,7 @@
   <section>
     <form action="result.php" method="get">
       <label for="number">Quanto R$ voce quer converter?</label>
-      <input type="text" name="number" id="idNumber">
+      <input type="number" name="number" id="idNumber" step="0.01">
       <input type="submit" value="Converter"></input>
     </form>
   </section>
