@@ -34,7 +34,8 @@
       echo "Dividendo = $d1";
       echo "Divisor = $d2";
 
-      $r = 
+      $r = 0;
+      $q = 0;
 
       echo "Resto = $r";
       echo "quociente = $q";
